@@ -25,23 +25,49 @@
 
         <div style="width: 600px; margin: 0 auto;">
             <h3>Đăng nhập tài khoản</h3>
-            <form action="xllogin.php" style="margin-top: 20px;" method="POST">
+            <form action="xlsignup.php" style="margin-top: 20px;" method="POST">
                 <div>
-                    <p>Tên đăng nhập</p>
+                    <p>Tài khoản</p>
                     <input type="text" style="width: 100%; margin-top: 10px; padding: 8px 12px;"
-                        placeholder="Nhập tài khoản" name="username">
+                        placeholder="Nhập tài khoản" name="username" required>
+                </div>
+
+                <div>
+                    <p style="margin-top: 10px;">Họ tên</p>
+                    <input style="width: 100%; margin-top: 10px; padding: 8px 12px;" type="text"
+                        placeholder="Nhập Họ tên" name="full_name" required>
+                </div>
+
+
+                <div>
+                    <p style="margin-top: 10px;">Email</p>
+                    <input style="width: 100%; margin-top: 10px; padding: 8px 12px;" type="email"
+                        placeholder="Nhập email" name="email" required>
+                </div>
+
+                <div>
+                    <p style="margin-top: 10px;">Số điện thoại</p>
+                    <input style="width: 100%; margin-top: 10px; padding: 8px 12px;" type="text"
+                        placeholder="Nhập số điện thoại" name="phone" required>
+                </div>
+
+                <div>
+                    <p style="margin-top: 10px;">Địa chỉ</p>
+                    <input style="width: 100%; margin-top: 10px; padding: 8px 12px;" type="text"
+                        placeholder="Nhập địa chỉ" name="address" required>
                 </div>
 
                 <div>
                     <p style="margin-top: 10px;">Mật khẩu</p>
                     <input style="width: 100%; margin-top: 10px; padding: 8px 12px;" type="password"
-                        placeholder="Nhập mật khẩu" name="password">
+                        placeholder="Nhập mật khẩu" name="password" required>
                 </div>
 
-                <button style="padding: 6px 8px; margin-top: 10px">Đăng nhập</button>
+                <button style="padding: 6px 8px; margin-top: 10px">Đăng ký</button>
 
 
-                <p style="margin-top: 10px;">Bạn chưa có tài khoản ? <span><a href="signup.php">Đăng ký</a></span></p>
+                <p style="margin-top: 10px;">Bạn đã có tài khoản ? <span><a href="login.php">Đăng nhập</a></span></p>
+
             </form>
         </div>
 

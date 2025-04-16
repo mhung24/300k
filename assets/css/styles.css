@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  color: #000;
 }
 
 body {
@@ -293,4 +294,105 @@ body {
 
 .footer_content-item > ul > li {
   padding: 6px 0;
+}
+
+/* Ẩn navbar_account mặc định */
+
+.list_item {
+  position: relative; /* Cần thiết để navbar_account có thể được căn chỉnh đúng vị trí */
+  cursor: pointer;
+}
+
+/* Một số phong cách cơ bản cho navbar_account */
+.navbar_account ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar_account li {
+  padding: 8px 10px;
+}
+
+.navbar_account li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar_account li a:hover {
+  text-decoration: underline;
+}
+
+.navbar_account::before {
+  position: absolute;
+  content: "";
+  height: 46px;
+  width: 100%;
+  top: -32px;
+  right: 0;
+}
+
+.navbar_account {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  top: 40px; /* Điều chỉnh tùy vị trí */
+  right: 0;
+  width: 240px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Hiển thị khi hover vào toàn bộ wrapper */
+.account_wrapper:hover .navbar_account {
+  display: block;
+}
+
+.account_wrapper {
+  position: relative;
+}
+
+.container-item {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.container-header {
+  margin: 12px 0;
+}
+
+.wrap_content > p {
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+.wrap_content > input {
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.wrap_content > select {
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.wrap_content > img {
+  border: 1px solid #ccc;
+}
+
+/* .wrap_content_list-describe > input {
+  height: 200px;
+  text-align: start;
+  line-height: 0;
+} */
+
+.wrap_btn-save {
+  margin-top: 10px;
+}
+
+.btn_save-data {
+  padding: 10px 12px;
+  color: #000;
 }

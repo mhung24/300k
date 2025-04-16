@@ -62,17 +62,18 @@
         <div style="width: 1600px; margin: 0 auto;">
             <div style="text-align: end; margin-top: 40px; ">
                 <button style="padding: 8px 12px"><a href="admincart.php">Chi tiết đơn hàng</a></button>
-                <button style="padding: 8px 12px"><a href="addnew.php">Thêm sản phẩm mới</a></button>
+                <button style="padding: 8px 12px"><a href="admin.php">Danh sách đơn hàng</a></button>
             </div>
-            <h4 style="margin: 10px 0 0 0;">Thông tin sản phẩm</h4>
+            <h4 style="margin: 10px 0 0 0;">Chi tiết đơn hàng</h4>
             <table>
                 <thead>
                     <tr>
-                        <td>Mã sản phẩm</td>
-                        <td>Hình ảnh</td>
+                        <td>Tên khách hàng</td>
+                        <td>Địa chỉ</td>
+                        <td>Số điện thoại</td>
                         <td>Tên sản phẩm</td>
-                        <td>Giá</td>
-
+                        <td>Hình ảnh</td>
+                        <td>Số lượng</td>
                     </tr>
                 </thead>
 
@@ -81,7 +82,9 @@
 
                     <?php
                     include __DIR__ . '/connect.php';
-                    $query = "SELECT * FROM product";
+                    $query = "SELECT *
+                        FROM orders o
+                        JOIN order_items oi ON o.id = oi.order_id;";
                     $result = mysqli_query($conn, $query);
 
                     if (mysqli_num_rows($result)) {
@@ -89,20 +92,13 @@
 
                             echo '
                                         <tr>
-                        <td style="width: 120px;">' . ($row["id"]) . '</td>
-                                    <td style="width: 240px;">
-                    <a href="upload.php?id=' . $row["id"] . '">
-                        <img src="./assets/images/' . $row["image"] . '" alt="' . htmlspecialchars($row["name"]) . '" 
-                            style="width: 100px; height: 100px; object-fit: cover;">
-                    </a>
-                </td>
-
-                <td>
-                    <a href="upload.php?id=' . $row["id"] . '" style="color: #000; text-decoration: none;">
-                        ' . htmlspecialchars($row["name"]) . '
-                    </a>
-                </td>
-                        <td style="width: 160px;">' . ($row["price"]) . '</td>
+                        <td>' . ($row["username"]) . '</td>
+                        <td >' . ($row["address"]) . '</td>
+                         <td >' . ($row["phone"]) . '</td>
+                           <td >' . ($row["product_name"]) . '</td>  
+                           <td ><img src="' . ($row["product_image"]) . '" alt="" 
+                            style="width: 100px; height: 100px; object-fit: cover;"></td>
+                             <td >' . ($row["quantity"]) . '</td>
                         
                     </tr>
                                         ';
