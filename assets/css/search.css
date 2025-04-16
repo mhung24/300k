@@ -1,0 +1,17 @@
+.content_search {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.search_option > select {
+  padding: 10px 12px;
+  width: 200px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.list_product-search {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
