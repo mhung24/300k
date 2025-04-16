@@ -63,7 +63,7 @@ CREATE TABLE colors (
 
 LOCK TABLES colors WRITE;
 /*!40000 ALTER TABLE colors DISABLE KEYS */;
-INSERT INTO colors VALUES (1,1,'Đỏ',NULL),(2,1,'Xanh',NULL),(3,1,'Vàng',NULL),(4,2,'Hồng',NULL),(5,3,'Lam',NULL),(6,4,'Trắng',NULL),(7,5,'Xám',NULL),(8,6,'Đen',NULL);
+INSERT INTO colors VALUES (5,3,'Lam',NULL),(6,4,'Trắng',NULL),(7,5,'Xám',NULL),(8,6,'Đen',NULL);
 /*!40000 ALTER TABLE colors ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +142,7 @@ CREATE TABLE product (
   image varchar(255) DEFAULT NULL,
   price_ss decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (id)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE product (
 
 LOCK TABLES product WRITE;
 /*!40000 ALTER TABLE product DISABLE KEYS */;
-INSERT INTO product VALUES (1,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Sandal','Nam','2025-04-13 15:56:03','sp1.jpg',450000.00),(2,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 1','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Giày thể thao','Nam','2025-04-13 15:56:03','sp1.jpg',500000.00),(3,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 2','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Giày đá banh','Nam','2025-04-13 15:56:03','sp1.jpg',785000.00),(4,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 3','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Giày cao gót','Nữ','2025-04-13 15:56:03','sp1.jpg',600000.00),(5,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 4','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Dép bé gái','Bé gái','2025-04-13 15:56:03','sp1.jpg',450000.00),(6,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 5','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',123123.00,123,'Dép','Bé trai','2025-04-13 15:56:03','sp1.jpg',1231000.00);
+INSERT INTO product VALUES (3,'123','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Giày Tây','Nam','2025-04-13 15:56:03','bp5.jpg',795000.00),(4,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 3','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Giày cao gót','Nữ','2025-04-13 15:56:03','sp1.jpg',600000.00),(5,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 4','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',345000.00,12,'Dép bé gái','Bé gái','2025-04-13 15:56:03','sp1.jpg',450000.00),(6,'Sandal Biti\'s Hunter Nữ Màu Trắng HEW000901TRG 5','Giày thể thao nam Biti’s Hunter X Dune - 4 Nguyên Tố: LỬA HSM004204 đa năng chiếm được nhiều sự yêu thích của các chàng trai. HSM004204 có thiết kế năng động, màu nổi bật là đôi giày vừa giúp bạn có một khởi đầu ngày mới tràn đầy năng lượng, vừa giúp bạn sải bước tự tin trên đường phố.',123123.00,123,'Dép','Bé trai','2025-04-13 15:56:03','sp1.jpg',1231000.00),(7,'tét','123',123.00,1,'123','','2025-04-16 18:49:37','bp3.jpg',123.00);
 /*!40000 ALTER TABLE product ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,7 +178,7 @@ CREATE TABLE sizes (
 
 LOCK TABLES sizes WRITE;
 /*!40000 ALTER TABLE sizes DISABLE KEYS */;
-INSERT INTO sizes VALUES (1,1,'20'),(2,1,'21'),(3,1,'22'),(4,1,'23'),(5,2,'24'),(6,3,'25'),(7,4,'26'),(8,5,'27'),(9,6,'28'),(10,1,'29'),(11,1,'30'),(12,1,'31'),(13,1,'32'),(14,1,'33'),(15,1,'34'),(16,1,'35'),(17,1,'36'),(18,1,'36'),(19,1,'38'),(20,1,'37'),(21,1,'39'),(22,1,'40'),(23,1,'41'),(24,1,'42'),(25,1,NULL);
+INSERT INTO sizes VALUES (6,3,'25'),(7,4,'26'),(8,5,'27'),(9,6,'28');
 /*!40000 ALTER TABLE sizes ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -202,7 +202,7 @@ CREATE TABLE `user` (
   PRIMARY KEY (id),
   UNIQUE KEY username (username),
   UNIQUE KEY email (email)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -211,7 +211,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES user WRITE;
 /*!40000 ALTER TABLE user DISABLE KEYS */;
-INSERT INTO user VALUES (1,'admin','admin','dmhoangtau@gmail.com','Nguyễn Huy Hoàng ','066771508','Linh Bình',0,'2025-04-14 12:54:29'),(3,'hoangtau','12345','dmhoan11gtau@gmail.com','Nguyễn Huy Hoàng ','066771508','Linh Bình',1,'2025-04-14 13:36:13');
+INSERT INTO user VALUES (1,'admin','admin','dmhoangtau@gmail.com','Nguyễn Huy Hoàng ','066771508','Linh Bình',0,'2025-04-14 12:54:29'),(3,'hoangtau','12345','dmhoan11gtau@gmail.com','Nguyễn Huy Hoàng ','066771508','Linh Bình',1,'2025-04-14 13:36:13'),(4,'hung123','hung123','hung123mqtb@gmail.com','Phạm Mạnh Hùng','0862822098','La Uyên',1,'2025-04-16 13:31:16'),(6,'hung1233','hung123','hung12333mqtb@gmail.com','Phạm Mạnh Hùng','0862822098','La Uyên',1,'2025-04-16 13:31:53'),(7,'hung123331','hung123','hung122233mqtb@gmail.com','Phạm Mạnh Hùng','0862822098','La Uyên',1,'2025-04-16 13:34:15');
 /*!40000 ALTER TABLE user ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -224,4 +224,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-16 12:13:47
+-- Dump completed on 2025-04-17  2:09:21
